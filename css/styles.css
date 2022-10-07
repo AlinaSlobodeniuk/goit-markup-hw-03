@@ -4,7 +4,7 @@
     --color-background:#FFFFFF;
     --text-color:#212121;
     --text-color-optional:#757575;
-
+   
 }
 
 body{
@@ -13,14 +13,67 @@ font-family: 'Roboto', sans-serif;
 color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+ul   {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container{
-    max-width: 1200px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* Шапка */
+.header>.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.container>.list-contact{
+    display: flex;
+    flex-wrap: wrap;}
+
 ul{list-style: none;}
 
-.header{background-color: var(--color-background);}
+.header{
+    background-color: var(--color-background);
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+nav{
+    flex-wrap: wrap;
+    display: flex;
+}
 
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -30,7 +83,14 @@ ul{list-style: none;}
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-right: 93px;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+
 .logo-accent{
     color: var(--color-accent);
 }
@@ -41,6 +101,9 @@ ul{list-style: none;}
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .list-contact{
@@ -49,20 +112,30 @@ ul{list-style: none;}
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 0;
     
 }
 
+
 .link{
     text-decoration: none;
-    color: var(--text-color)
+    color: var(--text-color);
+    margin-right: 50px;
+
 }
+
+
 .link:hover{color:var(--color-accent)}
 
 .link:focus{color:var(--color-accent)}
 
 .current-link{
     text-decoration: none;
-    color: var(--color-accent)
+    color: var(--color-accent);
+    margin-right: 50px;
 }
 .current-link:hover{color:var(--color-accent)}
 
@@ -71,30 +144,45 @@ ul{list-style: none;}
 .link-contact{
     text-decoration: none;
     color: var(--text-color-optional);
+    margin-right: 50px;
 }
+
 .link-contact:hover{color:var(--color-accent)}
 
-.link-co:focus{color:var(--color-accent)}
+.link-contact:focus{color:var(--color-accent)}
+/* hero  */
 
 .hero{
     background-color: var(--color-brend);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
 }
 .hero-title{
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    color: var(--color-background)
+    color: var(--color-background);
+    text-align: center;
+    letter-spacing: 0.06em;
+
 }
 .hero-button{
-background-color: var(--color-accent);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.9;
-color: var(--color-background);
-cursor: pointer;
+    background-color: var(--color-accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--color-background);
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
 }
-
+/* Наші переваги */
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
