@@ -195,6 +195,19 @@ nav{
     clip-path: inset(50%);
     margin: -1px;
 }
+.card{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-right: -30px;
+}
+.card>.card-item{
+    flex-basis: calc(100%/4-15px);
+    /* margin-left: 30px; */
+}
+
+.card-item:not(:last-child){margin-right: 30px;}
 
 .subtitle{
     font-weight: 700;
@@ -211,7 +224,7 @@ nav{
     letter-spacing: 0.03em;    
     color: var(--text-color-optional);
 }
-
+/* Чим ми займаємося */
 .third-title{
     font-weight: 700;
     font-size: 36px;
