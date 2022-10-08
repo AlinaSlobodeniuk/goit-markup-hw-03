@@ -53,7 +53,7 @@ img {
     
 }
 
-.container>.list-contact{
+.container>.card-list-contact{
     display: flex;
     flex-wrap: wrap;}
 
@@ -95,7 +95,7 @@ nav{
     color: var(--color-accent);
 }
 
-.list{
+.card-list{
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -106,7 +106,7 @@ nav{
     padding: 0;
 }
 
-.list-contact{
+.card-list-contact{
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -120,7 +120,8 @@ nav{
 }
 
 
-.link{
+
+.link-item{
     text-decoration: none;
     color: var(--text-color);
     margin-right: 50px;
@@ -128,28 +129,28 @@ nav{
 }
 
 
-.link:hover{color:var(--color-accent)}
+.link-item:hover{color:var(--color-accent)}
 
-.link:focus{color:var(--color-accent)}
+.link-item:focus{color:var(--color-accent)}
 
-.current-link{
+.current-link-item{
     text-decoration: none;
     color: var(--color-accent);
     margin-right: 50px;
 }
-.current-link:hover{color:var(--color-accent)}
+.current-link-item:hover{color:var(--color-accent)}
 
-.current-link:focus{color:var(--color-accent)}
+.current-link-item:focus{color:var(--color-accent)}
 
-.link-contact{
+.link-contact-item{
     text-decoration: none;
     color: var(--text-color-optional);
     margin-right: 50px;
 }
 
-.link-contact:hover{color:var(--color-accent)}
+.link-contact-item:hover{color:var(--color-accent)}
 
-.link-contact:focus{color:var(--color-accent)}
+.link-contact-item:focus{color:var(--color-accent)}
 /* hero  */
 
 .hero{
@@ -203,8 +204,8 @@ nav{
     margin-right: -30px;
 }
 .card>.card-item{
-    flex-basis: calc(100%/4-15px);
-    /* margin-left: 30px; */
+    flex-basis: calc(100%/4-30px);
+   
 }
 
 .card-item:not(:last-child){margin-right: 30px;}
@@ -223,6 +224,8 @@ nav{
     line-height: 1.7; 
     letter-spacing: 0.03em;    
     color: var(--text-color-optional);
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 /* Чим ми займаємося */
 .third-title{
@@ -230,8 +233,23 @@ nav{
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
+.card-title{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.card-title-item{
+    flex-basis: calc(100%/3-30px);
+    margin-top: 50px;
+}
+
+.card-title-item:not(:last-child){margin-right: 30px;}
+/* Наша команда */
 .our-team{
     background-color: #F5F4FA;;
 }
